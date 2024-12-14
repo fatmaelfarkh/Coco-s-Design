@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Website Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Coco's Designs</div>
+      <ul>
+        <li><a href="https://www.notchespatterns.com/pages/size-chart" target="_blank">Size Chart</a></li>
+        <li><a href="https://www.britannica.com/biography/Coco-Chanel" target="_blank">About</a></li>
+        <li><a href="https://www.chanel.com/">Our Inspiration</a></li>
+      </ul>
+      <button class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Coco's</h1>
+        <p>Discover the latest trends and styles in our curated collection.</p>
+        <a href="#featured-products" class="cta-button">Shop Now</a>
+      </div>
+      <div class="hero-carousel">
+        <div><img class="hero-carousel-image" src="cover1.jpg" alt="Fashion Model 1"></div>
+        <div><img class="hero-carousel-image" src="cover2.jpg" alt="Fashion Model 2"></div>
+        <div><img class="hero-carousel-image" src="cover3.jpg" alt="Fashion Model 3"></div>
+      </div>
+    </section>
+
+    <section class="featured-products" id="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>2500 EGP</p>
+            <button class="cta-button" data-product='{"name":"Product 1", "price":"$49.99", "image":"product1.jpg"}'>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>1800 EGP</p>
+            <button class="cta-button" data-product='{"name":"Product 2", "price":"$59.99", "image":"product2.jpg"}'>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>4000 EGP</p>
+            <button class="cta-button" data-product='{"name":"Product 3", "price":"$39.99", "image":"product3.jpg"}'>Add to Cart</button>
+          </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>We are a fashion company dedicated to providing the latest and greatest styles for our customers. Our mission is to help you look and feel your best.</p>
+        <button class="cta-button accordion-toggle">Learn More</button>
+        <div class="accordion-content">
+          <h3>Contact Information</h3>
+          <p><strong>Email:</strong> info@fashiondemo.com</p>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Address:</strong> 123 Fashion Street, Style City, ST 12345</p>
+          <p><strong>Hours:</strong> Monday-Friday: 9am-6pm, Saturday: 10am-4pm, Sunday: Closed</p>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="about.jpg" alt="About Us">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Coco's Designs. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</html>
